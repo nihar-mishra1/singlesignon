@@ -4,9 +4,7 @@ from .views import (
     FetchPublicKeyAPIView, ListAllServiceAPIView,
     ConnectionDetailAPIView
 )
-
 app_name = 'services'
-
 urlpatterns = [
     path('fetch-public-key/', FetchPublicKeyAPIView.as_view(), name='fetch-public-key'),
 
